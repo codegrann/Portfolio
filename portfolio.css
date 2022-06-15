@@ -1,0 +1,90 @@
+body {
+    /*background-image: url(myPhotos/cat1.jpg);
+    background-size: contain;*/
+    background-color: white;
+}
+
+/*.menu-bar{
+    background-color: rgb(15, 18, 230);
+    display:flex;
+    border: 2px solid black;
+    justify-content: flex-end;
+}
+.menu-bar ul{
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: blue;
+}
+.menu-bar ul li{
+    background-color: whitesmoke;
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    border: 1px solid black;
+    
+}*/
+.menu-bar {
+    /* min-height: 100px; */
+    width: 100vw;
+    background-color: aqua;
+    /* position: top; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
+}
+
+.menu-bar div {
+    padding: 0.75rem;
+    margin: 25px;
+    background-color: blue;
+    color: rgb(6, 6, 6);
+    border-radius: 0.75rem;
+}
+
+.menu-bar div:hover {
+    background-color: rgb(46, 103, 97);
+    cursor: pointer;
+}
+
+.menu-bar img {
+    width: 20px;
+    /*margin-right: 30px;*/
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+#section_1{
+    margin-top: 3.75rem;
+    display: flex;
+    justify-content: center;
+}
+
+#section_1 div{
+    background-color: red;
+    max-width: 150px;
+    max-height:150px;
+    overflow: scroll;
+    transition: background-color 0.5s ease-in-out;
+    animation-name: div_1;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+#section_1 div:hover{
+    background-color: brown;
+}
+@keyframes div_1{
+    /* 0%{rotate: 100deg;} */
+    25%{translate: 1cm 0;}
+    50%{background-color: cadetblue;}
+    100%{translate: -1cm 0;}
+}
+svg{
+    background-color: aqua;
+    margin: 2rem;
+}
